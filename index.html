@@ -41,17 +41,15 @@
 </head>
 <body>
 <div class="header">
-    <h1 class="title">医院体检数据智能分析与可视化系统</h1>
+    <h1 class="title">医院体检数据可视化系统</h1>
 </div>
 
 <!-- 数据统计面板 -->
 <div class="dashboard">
-    <div class="card"><h3>总数据量</h3><div class="num total">25</div></div>
-    <div class="card"><h3>体检合格</h3><div class="num normal">8</div></div>
+    <div class="card"><h3>总数据量</h3><div class="num total">30</div></div>
+    <div class="card"><h3>体检合格</h3><div class="num normal">10</div></div>
     <div class="card"><h3>待复查</h3><div class="num recheck">7</div></div>
-    <div class="card"><h3>不合格</h3><div class="num unqualify">7</div></div>
-    <div class="card"><h3>数据缺失</h3><div class="num miss">5</div></div>
-    <div class="card"><h3>逻辑异常</h3><div class="num logicErr">2</div></div>
+    <div class="card"><h3>不合格</h3><div class="num unqualify">8</div></div>
 </div>
 
 <!-- 功能工具栏 -->
@@ -77,38 +75,26 @@
 </tr>
 </thead>
 <tbody>
+<!-- 正常记录 -->
 <tr><td>T2025001</td><td>张三</td><td>35</td><td>男</td><td>175</td><td>72</td><td>125/85</td><td>5.2</td><td>190</td><td>380</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-green'>合格</span></td></tr>
-<tr><td>T2025002</td><td>李四</td><td>42</td><td>女</td><td>162</td><td>58</td><td>130/88</td><td>4.8</td><td>175</td><td>290</td><td>异常</td><td>正常</td><td>正常</td><td>异常</td><td><span class='tag tag-yellow'>待复查</span></td></tr>
-<tr><td>T2025003</td><td>王五</td><td>28</td><td>男</td><td>180</td><td>85</td><td>118/79</td><td>6.1</td><td>210</td><td>450</td><td>正常</td><td>异常</td><td>异常</td><td>正常</td><td><span class='tag tag-red'>不合格</span></td></tr>
-<tr><td>T2025004</td><td>赵六</td><td>55</td><td>女</td><td>158</td><td>65</td><td>145/95</td><td>7.8</td><td>240</td><td>520</td><td>异常</td><td>异常</td><td>正常</td><td>异常</td><td><span class='tag tag-red'>不合格</span></td></tr>
-<tr><td>T2025005</td><td>孙七</td><td>31</td><td>男</td><td>170</td><td>68</td><td>122/82</td><td>5.0</td><td>185</td><td>360</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-green'>合格</span></td></tr>
-<tr><td>T2025006</td><td>周八</td><td>48</td><td>女</td><td>165</td><td>62</td><td><span class="abnormal-data">未检测</span></td><td>5.5</td><td>200</td><td>320</td><td>正常</td><td>正常</td><td>异常</td><td>正常</td><td><span class='tag tag-yellow'>待复查</span></td></tr>
-<tr><td>T2025007</td><td>吴九</td><td>25</td><td>男</td><td>178</td><td>75</td><td>120/80</td><td>4.9</td><td>160</td><td>340</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-green'>合格</span></td></tr>
-<tr><td>T2025008</td><td>郑十</td><td>60</td><td>女</td><td>160</td><td>70</td><td>150/98</td><td>8.2</td><td>260</td><td>580</td><td>异常</td><td>异常</td><td>异常</td><td>异常</td><td><span class='tag tag-red'>不合格</span></td></tr>
-<tr><td>T2025009</td><td>冯十一</td><td>38</td><td>男</td><td>172</td><td>70</td><td>130/85</td><td>5.3</td><td>195</td><td>390</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-green'>合格</span></td></tr>
-<tr><td>T2025010</td><td>陈十二</td><td>45</td><td>女</td><td>159</td><td>55</td><td>135/90</td><td>6.5</td><td>220</td><td>410</td><td>异常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-yellow'>待复查</span></td></tr>
-<tr><td>T2025011</td><td>褚十三</td><td>29</td><td>男</td><td>182</td><td>90</td><td>128/84</td><td>5.1</td><td>205</td><td>420</td><td>正常</td><td>异常</td><td>正常</td><td>正常</td><td><span class='tag tag-yellow'>待复查</span></td></tr>
-<tr><td>T2025012</td><td>卫十四</td><td>52</td><td>女</td><td>163</td><td>63</td><td>140/92</td><td>7.1</td><td>230</td><td>490</td><td>异常</td><td>异常</td><td>正常</td><td>异常</td><td><span class='tag tag-red'>不合格</span></td></tr>
-<tr><td>T2025005</td><td>孙七</td><td>31</td><td>男</td><td>170</td><td>68</td><td>122/82</td><td>5.0</td><td>185</td><td>360</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-green'>合格</span></td></tr>
-<tr><td>T2025014</td><td>蒋十五</td><td>33</td><td>女</td><td>161</td><td>59</td><td>126/83</td><td>4.7</td><td>170</td><td>300</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-green'>合格</span></td></tr>
-<tr><td>T2025015</td><td>韩十六</td><td>40</td><td>男</td><td>176</td><td>78</td><td><span class="abnormal-data">999/999</span></td><td>5.4</td><td>198</td><td>370</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-red'>异常</span></td></tr>
+<!-- 缺失值 -->
+<tr><td>T2025026</td><td>马二七</td><td></td><td>男</td><td>175</td><td>70</td><td>125/80</td><td>5.2</td><td>190</td><td>380</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-yellow'>待复查</span></td></tr>
+<!-- 异常值 -->
 <tr><td>T2025016</td><td>朱十七</td><td><span class="abnormal-data">-5</span></td><td>男</td><td>172</td><td>74</td><td>123/81</td><td>5.2</td><td>188</td><td>355</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-red'>异常</span></td></tr>
-<tr><td>T2025017</td><td>秦十八</td><td>36</td><td>女</td><td><span class="abnormal-data">50</span></td><td>90</td><td>132/86</td><td><span class="abnormal-data">12.6</span></td><td>255</td><td>560</td><td>异常</td><td>异常</td><td>异常</td><td><span class="abnormal-data">未检测</span></td><td><span class='tag tag-red'>不合格</span></td></tr>
-<tr><td>T2025018</td><td>尤十九</td><td>22</td><td>男</td><td><span class="abnormal-data">未检测</span></td><td>88</td><td>119/77</td><td>4.6</td><td>172</td><td>310</td><td><span class="abnormal-data">未检测</span></td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-yellow'>待复查</span></td></tr>
-<tr><td>T2025019</td><td>许二十</td><td>68</td><td>女</td><td>155</td><td>120</td><td>160/110</td><td><span class="abnormal-data">9.5</span></td><td>280</td><td>620</td><td>异常</td><td>异常</td><td>异常</td><td>异常</td><td><span class='tag tag-red'>不合格</span></td></tr>
-<tr><td>T2025020</td><td>何二一</td><td>41</td><td>男</td><td>173</td><td><span class="abnormal-data">-10</span></td><td>127/83</td><td>5.3</td><td>192</td><td>375</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-red'>异常</span></td></tr>
-<tr><td>T2025021</td><td>吕二二</td><td>30</td><td>女</td><td>164</td><td>61</td><td><span class="abnormal-data">0/0</span></td><td>5.0</td><td>186</td><td>342</td><td>正常</td><td>正常</td><td>异常</td><td>正常</td><td><span class='tag tag-yellow'>待复查</span></td></tr>
-<tr><td>T2025022</td><td>施二三</td><td>59</td><td>男</td><td>171</td><td>76</td><td>142/93</td><td><span class="abnormal-data">未检测</span></td><td>235</td><td>485</td><td>异常</td><td>异常</td><td>正常</td><td>异常</td><td><span class='tag tag-red'>不合格</span></td></tr>
-<tr><td>T2025023</td><td>张二四</td><td>27</td><td>女</td><td>166</td><td>64</td><td>124/82</td><td>4.9</td><td><span class="abnormal-data">未检测</span></td><td>336</td><td>正常</td><td><span class="abnormal-data">未检测</span></td><td>正常</td><td>正常</td><td><span class='tag tag-yellow'>待复查</span></td></tr>
-<tr><td>T2025024</td><td>孔二五</td><td>72</td><td>男</td><td>168</td><td>82</td><td>155/102</td><td><span class="abnormal-data">8.7</span></td><td>272</td><td>595</td><td>异常</td><td>异常</td><td>异常</td><td>异常</td><td><span class='tag tag-red'>不合格</span></td></tr>
-<tr><td>T2025025</td><td>曹二六</td><td>34</td><td>女</td><td>160</td><td>57</td><td>129/84</td><td>5.1</td><td>182</td><td>348</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-green'>合格</span></td></tr>
+<tr><td>T2025015</td><td>韩十六</td><td>40</td><td>男</td><td>176</td><td>78</td><td><span class="abnormal-data">999/999</span></td><td>5.4</td><td>198</td><td>370</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-red'>异常</span></td></tr>
+<tr><td>T2025027</td><td>牛二八</td><td>40</td><td>女</td><td>165</td><td>60</td><td><span class="abnormal-data">abc</span></td><td>5.0</td><td>180</td><td>350</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-red'>异常</span></td></tr>
+<!-- 逻辑异常 -->
+<tr><td>T2025028</td><td>羊二九</td><td>35</td><td>男</td><td>172</td><td>68</td><td>120/80</td><td>5.1</td><td>185</td><td>350</td><td>正常</td><td>正常</td><td>正常</td><td>怀孕</td><td><span class='tag tag-red'>异常</span></td></tr>
+<!-- 极端异常值 -->
+<tr><td>T2025029</td><td>熊三十</td><td>999</td><td>男</td><td>300</td><td>500</td><td>300/250</td><td>50.0</td><td>9999</td><td>5000</td><td>异常</td><td>异常</td><td>异常</td><td>异常</td><td><span class='tag tag-red'>异常</span></td></tr>
+<!-- 非法字符 -->
+<tr><td>T2025030</td><td>@@@###</td><td>30</td><td>女</td><td>165</td><td>58</td><td>125/82</td><td>5.0</td><td>190</td><td>360</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td><span class='tag tag-yellow'>待复查</span></td></tr>
 </tbody>
 </table>
 </div>
 
 <script>
-
-// 简单搜索功能
+// 搜索功能
 document.getElementById("search").addEventListener("input",function(){
     let key = this.value.trim();
     let rows = document.querySelectorAll("tbody tr");
